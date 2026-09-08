@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Create{% endblock title %}
+
+{% block bgcolor %}lightblue{% endblock bgcolor %}
+
+
+{% block content %}
+
+<form action="", method="post">
+    <label for="firstname">firstname</label>
+    <input type="text", placeholder="enter name", name="firstname"><br><br>
+    <label for="lastname">lastname</label>
+    <input type="text", placeholder="enter lastname", name="lastname">
+    <input type="submit" value="create">
+</form>
+
+{% endblock content %}

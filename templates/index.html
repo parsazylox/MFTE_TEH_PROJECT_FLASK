@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+
+
+{% block bgcolor%}skyblue{% endblock bgcolor %}
+
+{% block title %}index{% endblock title %}
+
+{% block content %}
+{% include "navbar.html" %}
+    {% for i in s %}
+        <a href="{{url_for ("details", id=i.id)}}"><h1>{{i.id}}</h1></a>
+
+
+            {% endfor %}
+
+{%endblock%}

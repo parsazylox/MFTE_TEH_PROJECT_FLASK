@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Update{% endblock title %}
+{% block content %}
+<form action="" method="post">
+    <label for="name">name</label>
+    <input type="text" name="name" value={{st.name}}><br><br>
+    <label for="family">family</label>
+    <input type="text" name="family" value={{st.family}}><br><br>
+    <input type="submit" value="Update">
+</form>
+
+
+
+
+
+{% endblock content %}
