@@ -42,7 +42,9 @@ def update(id):
     return render_template('update.html', st=st)
         
 
-
+@app.route('testpage')
+def test():
+    pass
 
 if __name__ == '__main__':
     app.run(debug=True)
